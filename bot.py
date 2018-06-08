@@ -52,9 +52,6 @@ def at_answer(message):
 @app.route("/")
 def main():
     while True:
-        try:
-            bot.polling()
-        except Exception:
-            time.sleep(5)
+        bot.polling()
 if __name__ == "__main__":
     app.run()
