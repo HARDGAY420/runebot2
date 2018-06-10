@@ -27,10 +27,6 @@ def at_answer(message):
     asd = dict()
     asd = get_user.skills
 
-    lista = list()
-    lista.append("attack")
-    lista.append("defence")
-
     koko = ""
 
     for key, value in asd.items():
