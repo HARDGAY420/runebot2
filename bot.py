@@ -26,16 +26,19 @@ def at_answer(message):
     get_user = Hiscores(username)
     asd = dict()
     asd = get_user.skills
-
+    total_lvl = 0
     koko = ""
 
     for key, value in asd.items():
         koko += key
         koko += " : "
         koko += str(value.level)
+        total_lvl += value.level
 
         koko += '\n'
 
+    koko += "TOTAL LEVEL : "
+    koko += str(total_lvl)
     bot.reply_to(message, koko)
     #bot.reply_to(message, asd['defence'])
 
