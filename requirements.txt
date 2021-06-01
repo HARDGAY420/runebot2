@@ -14,7 +14,7 @@ psycopg2==2.7.1
 pyTelegramBotAPI==3.6.3
 requests==2.18.4
 six==1.11.0
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==15.1.0
 Werkzeug==0.14.1
 whitenoise==3.2
